@@ -1,3 +1,6 @@
+"""
+Module containing the function to get the top news stories of a given area
+"""
 import json
 import logging
 import requests

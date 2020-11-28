@@ -33,6 +33,6 @@ def get_weather(api_key, city_name):
             logging.error('invalid API key for openweathermap')
     except KeyError:
         temperature, pressure, humidity, current_weather = None, None, None, None
-        logging.error('no weather data for given area') 
+        logging.error('no weather data for given area or invalid API key for openweathermap') 
     return temperature, pressure, humidity, current_weather
 
