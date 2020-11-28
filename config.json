@@ -1,7 +1,7 @@
 {
     "preferences":{
         "country": "gb",
-        "city": "",
+        "city": "London",
         "apptitle": "Daily Update",
         "news_sources": "BBC, The Guardian",
         "blacklist_sources": "The Sun"
