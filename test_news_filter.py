@@ -17,4 +17,5 @@ def test_valid():
     assert stories != {}
 
 def test_connection():
-    pass
+    stories = get_news('c1cbe821f0d24fb49be55f5c86172737', 'gb')
+    assert stories != {}

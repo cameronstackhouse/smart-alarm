@@ -125,7 +125,7 @@ def covid_infection_rate(cases: int) -> str:
     return risk_level
 
 
-def add_stories(key: str, area: str, articles: int, blist: list, links = False) -> str:
+def add_stories(key: str, area: str, articles: int, blist: list, links: bool = False) -> str:
     """Function return the top stories of the day given different perameters from the config file.
     The function only returns the number of top stories the user has specified they want to see,
     this is specified in the articles variable."""
@@ -290,8 +290,10 @@ if __name__ == '__main__':
     except:
         failed = True
         news_key, weather_key, country, city, web_title, logfile, blacklist, num_articles, set_image = '', '', '', '', '', 'app.log', [], 0, ''
-    logging.basicConfig(filename=logfile, level=logging.INFO, filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename=logfile, level=logging.INFO, filemode='a', format='%(name)s - %(levelname)s - %(message)s')
     logging.getLogger('werkzeug').disabled = True
     if failed:
         logging.error('One or more config fields are in an invalid data type')
+    start_time = datetime.today().strftime('%Y-%m-%d %H:%M')
+    logging.info(f'Application started at {start_time}')
     app.run()

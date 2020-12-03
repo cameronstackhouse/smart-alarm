@@ -5,7 +5,7 @@ import json
 import logging
 import requests
 
-def get_weather(api_key, city_name):
+def get_weather(api_key: str, city_name: str) -> (float, float, float, str):
     """
     Function to get the current weather and temperature of a
     given city using the openweathermap API
@@ -33,6 +33,5 @@ def get_weather(api_key, city_name):
             logging.error('invalid API key for openweathermap')
     except KeyError:
         temperature, pressure, humidity, current_weather = None, None, None, None
-        logging.error('no weather data for given area or invalid API key for openweathermap') 
+        logging.error('no weather data for given area or invalid API key for openweathermap')
     return temperature, pressure, humidity, current_weather
-
