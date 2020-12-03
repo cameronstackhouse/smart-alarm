@@ -1,7 +1,7 @@
 """Module to get COVID-19 case data using the uk_covid19 API"""
 import logging
 from uk_covid19 import Cov19API
-def get_covid(city: str, current_date: str) -> (int, int, str, float):
+def get_covid(city: str, current_date: str) -> (int, int, str):
     """Function to get the number of covid-19 cases in a given area on
     a given date"""
     cases_and_deaths = {

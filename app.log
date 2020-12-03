@@ -1,0 +1,13 @@
+root - INFO - Notification: {'title': '2020-12-03 COVID-19 Update', 'content': 'COVID-19 Statistics for Exeter for today are now available'} set
+root - INFO - Notification: {'title': 'COVID-19 Infection rate 2020-12-03', 'content': 'The current covid infection rate in Exeter is Low'} set
+root - INFO - Notification {'title': 'COVID-19 Infection rate 2020-12-03', 'content': 'The current covid infection rate in Exeter is Low'} has been removed
+root - INFO - Alarm named Test set for: 17:09 2020-12-03
+root - ERROR - PyTTSx3 Endloop error
+root - INFO - Alarm Test set for: 17:09 2020-12-03 has been removed
+root - INFO - Alarm: Test set for: 17:09 2020-12-03 has been activated
+root - INFO - Alarm named Test set for: 17:10 2020-12-03
+root - INFO - Alarm Test set for: 17:10 2020-12-03 has been removed
+root - INFO - Alarm: Test set for: 17:10 2020-12-03 has been activated
+root - INFO - Alarm named aaaaa set for: 17:10 2020-12-03
+root - INFO - Alarm aaaaa set for: 17:10 2020-12-03 has been removed
+root - INFO - Alarm: aaaaa set for: 17:10 2020-12-03 has been activated

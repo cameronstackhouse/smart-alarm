@@ -1,16 +1,17 @@
 {
     "preferences":{
         "country": "gb",
-        "city": "London",
+        "city": "Exeter",
         "apptitle": "Daily Update",
-        "news_sources": "BBC, The Guardian",
-        "blacklist_sources": "The Sun"
+        "blacklist_sources": "The Sun, Daily Mirror, Mirror Online, Daily Mail",
+        "number_of_articles": 3
     },
     "API-keys":{
-        "weather" : "",
-        "news" : ""
+        "weather" : "194d48fe0d7ecdc5d7fd5c4fbdb28038",
+        "news" : "c1cbe821f0d24fb49be55f5c86172737"
     },
     "filepaths":{
-        "logfile" : "app.log"
+        "logfile" : "app.log",
+        "image": "clock-icon.jpg"
     }
 }

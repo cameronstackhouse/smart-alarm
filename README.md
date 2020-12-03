@@ -8,10 +8,31 @@ A stable internet connection to allow for data to be gathered from the previousl
 Python version 3.9 or above (developed using Python 3.9)
 
 #### Installation:
-install pip and then run the command: pip install pyttsx3 (or pip3 install pyttsx3) in the terminal
+Install pip and then run the command: pip install pyttsx3 (or pip3 install pyttsx3) in the terminal
+Install pytest: pip install pytest (or pip3 install pytest)
 
 #### Instructions:
-fill in the config file with information about your current country, current city and your two API keys. To run the program run the main.py file
+Fill in the config file with the preference information listed bellow. Then run the main.py module and navigate to http://127.0.0.1:5000/ in the google chrome web browser.
+Ensure that all sections are filled out in the config file with valid details otherwise the program will not work as expected.
+
+Config file instructions:
+preferences:
+country: Fill in this section with the country you live in.
+city: Fill in this section with the city you live in.
+apptitle: Fill in this with the title to be displayed on the html template.
+blacklist_sources: Fill in this with the list of sources you don't want to receive articles from, seperated by , e.g to blacklist The Sun and Daily Mirror: "The Sun, Daily Mirror".
+number_of_articles: Fill this in with the number of articles you want to be displayed when news articles are requested.
+
+API-keys:
+weather: Fill in your API key from openweathermap.
+news: Fill in your API key from News API.
+
+filepaths:
+logfile: Fill in the name of the log file which will keep logs of actions performed by the application and errors that occour.
+image: Fill in the name of the image to be displayed on the application. This image should be stored in static/images.
+
+#### Testing:
+To run the test functions created to check if the functionality of the program is working correctly then navigate to the directory containing the files for the program and then run pytest.
 
 #### Details:
 Author: Cameron Stackhouse
